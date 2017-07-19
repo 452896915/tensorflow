@@ -4202,6 +4202,8 @@ filegroup(
 filegroup(
     name = "android_extended_ops_group1",
     srcs = [
+        "segment_reduction_ops.h",
+        "segment_reduction_ops.cc",
         "argmax_op.cc",
         "avgpooling_op.cc",
         "batch_matmul_op_real.cc",
@@ -4214,6 +4216,8 @@ filegroup(
         "conv_grad_input_ops.cc",
         "conv_grad_ops.cc",
         "conv_grad_ops.h",
+        "l2loss_op.cc",
+        "l2loss_op.h",
         "conv_ops.cc",
         "conv_ops_fused.cc",
         "conv_ops_using_gemm.cc",
@@ -4236,6 +4240,7 @@ filegroup(
         "cwise_op_invert.cc",
         "cwise_op_isfinite.cc",
         "cwise_op_less.cc",
+        "cwise_op_less_equal.cc",
         "cwise_op_log.cc",
         "cwise_op_logical_and.cc",
         "cwise_op_logical_not.cc",
